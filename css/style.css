@@ -1,0 +1,776 @@
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+
+html {
+    background: url(images/background5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+}
+header {
+    display: inline-block;
+    width: 100%;
+    height: 15%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+header,
+footer {
+    width: 100%;
+}
+
+footer {
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin:0;
+    bottom:0;
+    text-decoration: none;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+
+
+}
+div {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0px;
+    padding-right: 25px;
+    padding-left: 25px;
+
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+  text-align: center;
+  color: orange;
+}
+
+nav{
+	float:right;
+	padding-right: 15px;
+	padding-top: 15px;
+    z-index: 0;
+}
+header img{
+	max-width: 40%;
+	max-height: 110px;
+	margin-left:40px;
+	margin-top: 15px;
+	padding-top: 5px;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+    position: absolute;
+    z-index: 1;
+
+
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+
+h1.about {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: black;
+    margin-top: 17px;
+}
+
+h2.titles {
+
+  color:black;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+/*
+h2.profile {
+  color:black;
+  font-size: 1.5em;
+  font-weight: normal;
+  width: 55%;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: inline-block;
+  margin-bottom: 0%;
+  margin-top: 0;
+}*/
+
+img.profile2 {
+  width: 58%;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: inline-block;
+  margin-bottom: 0%;
+}
+img.profile{
+  width: 38%;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: inline-block;
+  margin-bottom: 0%;
+}
+
+h2.description {
+	padding: 1%;
+	color: black;
+	font-weight: lighter;
+	font-size: 1.6em;
+	text-align: center;
+}
+
+h3.about {
+    text-align: center;
+    font-size: 1 em;
+    color: black;
+}
+
+h3.backto {
+    text-align: center;
+    color: black;
+}
+
+a.about {
+    text-align: center;
+    font-size: 2 em;
+    color: black;
+}
+
+a.thumb_col_3 {
+
+  text-align: center;
+}
+
+p.line {
+  text-align: center;
+}
+
+h3 {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+}
+
+a{
+    color: orange;
+    text-decoration: none;
+}
+
+h3 a{
+
+  color: black;
+  text-decoration: underline;
+}
+
+h2 a{
+
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+footer a{
+    color: black;
+    position: absolute;
+    z-index: 1;
+}
+footer h2{
+  position: center;
+  padding-top: 35px;
+}
+
+footer div{
+  padding: 0%;
+  margin: 0%;
+}
+
+footer h2.titles{
+  color: white;
+  font-weight: lighter;
+}
+
+
+.h2 {
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 25%;
+    background-color: rgba(246, 135, 40, 1.0);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s ease;
+    font-weight:lighter;
+}
+
+.thumb:hover .mask {
+    opacity: 2;
+}
+
+.thumb .mask h2
+.thumb .mask a {
+
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0s ease-in-out;
+    color: white;
+    /*margin-top: 40%;*/
+    text-orientation: center;
+    text-decoration: none;
+    position: center;
+    font-weight:lighter;
+
+}
+
+.thumb:hover .mask h2
+.thumb:hover .mask a {
+    opacity: 1;
+    transform: scale(1);
+    text-orientation: center;
+    color: white;
+    position: center;
+    text-align: center;
+    overflow: stack;
+    font-weight:lighter;
+
+}
+
+.thumb img {
+    transform: scale(1);
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+}
+
+.thumb:hover img {
+    transform: scale(1.1);
+    opacity: 1.2;
+}
+
+img.grid_4{
+	margin: 0px;
+}
+ul#menu li {
+    display:inline;
+    width: 130px;
+    text-align: center;
+
+}
+
+/*responsive nav bar*/
+nav ul {
+    list-style-type: none;
+    position: relative;
+    margin:0;
+    line-height: 80px;
+    z-index: 1;
+}
+
+/* stack the li to the left with float and a fixed width  */
+
+/* change navbar item colo on hover */
+nav ul li:hover {
+    color: grey;
+}
+
+/* make the a tags display like block elements to take up full space of container li*/
+nav ul a {
+    display: inline block;
+    color: #222;
+    text-decoration: none;
+    line-height: 30px;
+    padding: 15px;
+    font-size:23px;
+    padding-right: 40px;
+}
+
+nav ul a:hover {
+	/*hover over nav links styles here*/
+}
+
+/* hide sublists be default */
+nav ul ul {
+    display: none;
+    /* change bg so we can see what we are affecting*/
+
+    background: #ddd;
+}
+
+/* give "dropdown" a sepcific width */
+nav ul ul li {
+    /* float: none; */
+
+    background-color: grey;
+    /*width: 500px;*/
+}
+
+/* align in drop down text left vs center for main navbar */
+nav ul ul a {
+    padding: 15px;
+    text-align: left;
+}
+
+/* Selects all <ul> elements where the its parent is an unordered list, with a moused over list item */
+nav ul li:hover > ul {
+    /* only show child lists when the parent li is hovered over, OR when child ul is hovered over */
+
+    display: block;
+    /* change color to see what we are looking at */
+
+    background-color: #ccc;
+}
+
+/* change in internal ul background color for hover */
+nav ul li:hover > ul li:hover {
+    background: #999
+}
+/*.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}*/
+
+*{
+	box-sizing: border-box;
+}
+
+.logo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: inline;
+
+
+}
+
+.wrapper{
+	width:96%;
+	margin:0 2%;
+
+}
+
+.col_3{
+	display: inline-block;
+	width:31.6%;
+	margin-left: 0.5%;
+	margin-right:0.5%;
+	margin-bottom: 1.2%;
+    margin-top: 0%;
+    position: relative;
+    z-index: 0;
+}
+
+.col_2{
+	display: inline-block;
+	width:48.4%;
+	margin-left: 0.5%;
+	margin-right:0.5%;
+	margin-bottom: 0.5%;
+	margin-top: 0%;
+}
+
+.col_2_about{
+    display: inline-block;
+    width:30.6%;
+    margin-left: 10%;
+    margin-right:0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.col_2_square{
+    display: inline-block;
+    width:30.6%;
+    margin-left: 2%;
+    margin-right:0%;
+    margin-bottom: 2%;
+    margin-top: 0%;
+}
+
+.col_4{
+    display: inline-block;
+	width:23.6%;
+	margin-left: 0.5%;
+	margin-right:0.5%;
+	margin-bottom: 1.2%;
+    margin-top: 3%;
+    position: relative;
+    z-index: 0;
+}
+
+.col_4_people{
+    display: inline-block;
+  width:20.0%;
+  margin-left: 3.8%;
+  margin-right:0%;
+  margin-bottom: 1.2%;
+    margin-top: 3%;
+    position: relative;
+    z-index: 0;
+}
+
+.col_2_video{
+    display: inline-block;
+    width:40%;
+    margin-left: 5%;
+    margin-right: 2.5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.col_2_photo{
+    display: inline-block;
+    width:48.4%;
+    margin-left: 0.5%;
+    margin-right:0.5%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+}
+.col_4_gif{
+    display: inline-block;
+    width: 23%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.col_1{
+	display: inline-block;
+	width:98.5%;
+	margin-left: 0.5%;
+	margin-right:0.5%;
+	margin-bottom: 0%;
+	margin-top: 0%;
+}
+
+.col_1_video{
+    display: inline-block;
+    width:80%;
+    margin-left: 9.5%;
+    margin-right:0.5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    align-content: center;
+}
+
+.col_vertical{
+  display: inline-block;
+  width:31.6%;
+  padding-top: 0.5%;
+  padding-bottom: 0%;
+  padding-left: 4%
+  margin-left: 0.5%;
+  margin-top: 0.5%;
+  margin-right:0.5%;
+  margin-bottom: 0.5%;
+  position: relative;
+    z-index: 0;
+}
+
+.margin_adjust{
+  padding-left: 3%;
+
+}
+
+*/}
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+
+  body {
+    font-family: Gill Sans, sans-serif;
+    color: #000000;
+    font-weight: normal;
+
+    }
+
+  .col_4{
+  display: inline-block;
+  width:45%;
+  margin-left: 2%;
+  margin-right:2%;
+  margin-bottom: 0%;
+  margin-top: 3%;
+  position: relative;
+  z-index: 0;
+}
+
+
+.thumb .mask a {
+
+    width:100%;
+    height: 200%;
+    display:block;
+    text-decoration: none;
+    padding-top: 60%;
+    padding-bottom: 15%;
+    position: center;
+}
+.mask {
+    position: absolute;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30%;
+    background-color: rgba(246, 135, 40, 1.0);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s ease;
+}*/
+
+}
+
+/* All Mobile Sizes */
+/*@media only screen and (max-width: 767px) {}*/
+
+
+
+
+
+/* Mobile Landscape Size to Tablet Portrait */
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  body {
+    font-family: Gill Sans, sans-serif;
+    color: #000000;
+    font-weight: normal;
+
+    }
+
+  body h1 {
+      font-family: Gill Sans, sans-serif;
+      font-weight: normal;
+    }
+
+  .col_4{
+  display: inline-block;
+  width:45%;
+  margin-left: 2%;
+  margin-right:2%;
+  margin-bottom: 0%;
+  margin-top: 3%;
+  position: relative;
+  z-index: 0;
+}
+
+.thumb .mask a {
+
+    width:100%;
+    height: 200%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    /*padding-top: 25%;
+    padding-bottom: 25%;*/
+}
+
+.mask {
+    position: absolute;
+    text-align: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 20%;
+    background-color: rgba(246, 135, 40, 1.0);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+  nav ul a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    line-height: 30px;
+    padding: 15px;
+    font-size:16px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+img.profile2 {
+  width: 64%;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: inline-block;
+  margin-bottom: 0%;
+}
+img.profile{
+  width: 32%;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: inline-block;
+  margin-bottom: 0%;
+}
+
+.col_4_people{
+    display: inline-block;
+  width:40.0%;
+  margin-left: 5.9%;
+  margin-right:0%;
+  margin-bottom: 1.2%;
+    margin-top: 3%;
+    position: relative;
+    z-index: 0;
+}
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {
+
+/*  *{
+  box-sizing: border-box;
+}*/
+
+    body {
+    font-family: Gill Sans, sans-serif;
+    color: #000000;
+    font-weight: normal;
+
+    }
+
+    body h1 {
+      font-family: Gill Sans, sans-serif;
+      font-weight: normal;
+    }
+
+  .col_4{
+  display: inline-block;
+  width:90%;
+  margin-left: 5%;
+  margin-right:5%;
+  margin-bottom: 1.2%;
+    margin-top: 3%;
+    position: relative;
+    z-index: 0;
+}
+
+.mask {
+    position: absolute;
+    text-align: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 25%;
+    background-color: rgba(246, 135, 40, 1.0);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.thumb .mask a {
+
+    width:100%;
+    height: 200%;
+    display: block;
+    text-decoration: none;
+    position: center;
+}
+
+.mask a {
+
+  padding: 0;
+  shape-margin: 0;
+  text-align: center;
+}
+
+  nav ul a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    line-height: 30px;
+    padding: 15px;
+    font-size:16px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.logo{
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  display: inline;
+
+}
+
+footer a{
+    color: black;
+    position: absolute;
+    display: inline;
+    z-index: 1;
+    font-size: 14px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+img.profile2 {
+  width: 96%;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: inline-block;
+  margin-bottom: 0%;
+}
+img.profile{
+  width: 100%;
+  padding-right: 20%;
+  padding-left: 20%;
+  display: inline-block;
+  margin-bottom: 0%;
+}
+
+.col_4_people{
+    display: inline-block;
+  width:40.0%;
+  margin-left: 5.9%;
+  margin-right:0%;
+  margin-bottom: 1.2%;
+    margin-top: 3%;
+    position: relative;
+    z-index: 0;
+}
+
+}
+
+</style>
